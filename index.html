@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eaTurkish</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cera-round-pro-demo?styles=152403"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+  <a href="#" class="back__top" id="backtop">
+    <i class="fa-solid fa-up-long back__top--i"></i>
+  </a>
+    <div class="loading" id="loading">
+      <div class="loader">
+        <div class="dot" style="--i:0"></div>
+        <div class="dot" style="--i:1"></div>
+        <div class="dot" style="--i:2"></div>
+        <div class="dot" style="--i:3"></div>
+        <div class="dot" style="--i:4"></div>
+        <div class="dot" style="--i:5"></div>
+        <div class="dot" style="--i:6"></div>
+        <div class="dot" style="--i:7"></div>
+        <div class="dot" style="--i:8"></div>
+        <div class="dot" style="--i:9"></div>
+      </div>
+      <h2 class="loading__h2">Loading...</h2>
+      <div class="loader">
+        <div class="dot" style="--i:0"></div>
+        <div class="dot" style="--i:1"></div>
+        <div class="dot" style="--i:2"></div>
+        <div class="dot" style="--i:3"></div>
+        <div class="dot" style="--i:4"></div>
+        <div class="dot" style="--i:5"></div>
+        <div class="dot" style="--i:6"></div>
+        <div class="dot" style="--i:7"></div>
+        <div class="dot" style="--i:8"></div>
+        <div class="dot" style="--i:9"></div>
+      </div>
+    </div>
+    <nav id="navbar" class="navbar-shrink">
+      <div class="container">
+        <div class="nav__flex">
+          <div class="nav__brand">
+            <a href="../index.html"
+              ><img src="../images/nav/brand.svg" alt="No img?"
+            /></a>
+            <!-- <i
+              class="fa-solid fa-bars fa-xl nav__icon"
+              style="color: #ffffff"></i> -->
+          </div>
+          <ul class="nav__items">
+            <a href="../html/menu.html"><li class="nav__link">Menu</li></a>
+            <a href="../html/news.html"><li class="nav__link">News</li></a>
+            <a href="../html/about_us.html"
+              ><li class="nav__link">About Us</li></a
+            >
+            <a href="../html/contact_us.html"
+              ><li class="nav__link">Contact Us</li></a
+            >
+            <a href=""><li class="nav__btn">Log in</li></a>
+          </ul>
+          <!-- <div class="nav__wrapper">
+            <a class="nav__a" href="">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Menu
+            </a>
+            <a class="nav__a" href="">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              News
+              </a>
+            <a class="nav__a" href="">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              About Us
+            </a>
+            <a class="nav__a" href="">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Contact Us
+            </a> -->
+            <!-- <a href=""><li style="list-style-type: none;" class="nav__btn">Log in</li></a> -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="header__flex">
+          <div class="header__text">
+            <div class="header__text--h4">Chase The New Flavour</div>
+            <div class="header__text--h1">The Key To Fine Dining</div>
+            <div class="header__text--p">
+              Sit tellus lobortis sed senectus vivamus molestie. Condimentum
+              volutpat morbi facilisis quam scelerisque sapien. Et, penatibus
+              aliquam amet tellus
+            </div>
+            <div class="header__text--btn hoverme">Explore Menu</div>
+          </div>
+          <div class="header__img">
+            <img
+              class="header__img"
+              src="./images/home/header.svg"
+              alt="No img?" />
+          </div>
+        </div>
+        <div class="header__scroll">
+          <div class="header__scroll--line">
+            <img src="./images/home/line.svg" alt="No img?" />
+          </div>
+          <div class="header__scroll--text">Scroll</div>
+        </div>
+      </div>
+    </header>
+    <div class="section-1">
+      <div class="container">
+        <div class="section-1__text">Popular Dishes</div>
+        <div class="section-1__card" data-aos="zoom-in">
+          <div class="section-1__card-1">
+            <div class="section-1__card-img">
+              <img src="./images/home/s-1_kebab.svg" alt="No img?" />
+            </div>
+            <h1 class="section-1__card-h1">
+              Barbecue Shish kebab Shashlik Skewer
+            </h1>
+            <div class="section-1__card-img2">
+              <img src="./images/home/star.svg" alt="No img?" />
+            </div>
+            <p class="section-1__card-p">$12.00</p>
+          </div>
+          <div class="section-1__card-2">
+            <div class="section-1__card-img">
+              <img src="./images/home/s-1_pizza.svg" alt="No img?" />
+            </div>
+            <h1 class="section-1__card-h1">
+              Barbecue Shish kebab Shashlik Skewer
+            </h1>
+            <div class="section-1__card-img2">
+              <img src="./images/home/star.svg" alt="No img?" />
+            </div>
+            <p class="section-1__card-p">$12.00</p>
+          </div>
+          <div class="section-1__card-3">
+            <div class="section-1__card-img">
+              <img src="./images/home/s-1_burger.svg" alt="No img?" />
+            </div>
+            <h1 class="section-1__card-h1">
+              Barbecue Shish kebab Shashlik Skewer
+            </h1>
+            <div class="section-1__card-img2">
+              <img src="./images/home/star.svg" alt="No img?" />
+            </div>
+            <p class="section-1__card-p">$12.00</p>
+          </div>
+          <div class="section-1__card-4">
+            <div class="section-1__card-img">
+              <img src="./images/home/s-1_combo.svg" alt="No img?" />
+            </div>
+            <h1 class="section-1__card-h1">
+              Barbecue Shish kebab Shashlik Skewer
+            </h1>
+            <div class="section-1__card-img2">
+              <img src="./images/home/star.svg" alt="No img?" />
+            </div>
+            <p class="section-1__card-p">$12.00</p>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-2">
+      <div class="container">
+        <div class="section-2__h1">Our Regular Menu Pack</div>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1 active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-home"
+              type="button"
+              role="tab"
+              aria-controls="pills-home"
+              aria-selected="true">
+              All
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-profile"
+              type="button"
+              role="tab"
+              aria-controls="pills-profile"
+              aria-selected="false">
+              Shawarma
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact"
+              aria-selected="false">
+              Turk Kebab
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact2-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact2"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact2"
+              aria-selected="false">
+              Hamburger Kebab
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact3-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact3"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact3"
+              aria-selected="false">
+              Doner kebab
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact4-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact4"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact4"
+              aria-selected="false">
+              Shish kebab
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact5-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact5"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact5"
+              aria-selected="false">
+              French fries Pizza
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link1"
+              id="pills-contact6-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-contact6"
+              type="button"
+              role="tab"
+              aria-controls="pills-contact6"
+              aria-selected="false">
+              Desserts
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-home"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_combo.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_chess-burger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hoddog.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_combo.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 col-xxl-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-profile"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shawarma.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact2"
+            role="tabpanel"
+            aria-labelledby="pills-contact2-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_hamburger.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact3"
+            role="tabpanel"
+            aria-labelledby="pills-contact3-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_danar.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact4"
+            role="tabpanel"
+            aria-labelledby="pills-contact4-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_shish-kebab.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact5"
+            role="tabpanel"
+            aria-labelledby="pills-contact5-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_pizza.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-contact6"
+            role="tabpanel"
+            aria-labelledby="pills-contact6-tab"
+            tabindex="0">
+            <div class="row gy-3">
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="s-2__card" style="width: 20rem">
+                  <img
+                    src="./images/home/s-2_dessert.svg"
+                    class="card-img-top"
+                    alt="No img?" />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Barbecue Shish kebab Shashlik Skewer
+                    </h5>
+                    <p class="s-2__card-text">$12.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-3">
+      <div class="container">
+        <div class="section-3__text">
+          <div class="section-3__text--h5">Testimony</div>
+          <div class="section-3__text--h1">Happy Customers</div>
+          <div class="section-3__text--img">
+            <img src="./images/home/spoon.svg" alt="No img?" />
+          </div>
+        </div>
+        <div
+          class="section-3__cards"
+          data-aos="fade-up"
+          data-aos-duration="3000">
+          <div class="section-3__card">
+            <div class="section-3__card--h1">Maria</div>
+            <div class="section-3__card--p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit
+              iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla
+              scelerisque scelerisq...
+            </div>
+            <div class="section-3__card--other">
+              <img src="./images/home/home_other.svg" alt="" />
+            </div>
+          </div>
+          <div class="section-3__card">
+            <div class="section-3__card--h1">Maria</div>
+            <div class="section-3__card--p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit
+              iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla
+              scelerisque scelerisq...
+            </div>
+            <div class="section-3__card--other">
+              <img src="./images/home/home_other.svg" alt="" />
+            </div>
+          </div>
+          <div class="section-3__card">
+            <div class="section-3__card--h1">Maria</div>
+            <div class="section-3__card--p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor sit
+              iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla
+              scelerisque scelerisq...
+            </div>
+            <div class="section-3__card--other">
+              <img src="./images/home/home_other.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-4">
+      <div class="container">
+        <div class="section-4__text">
+          <div class="section-4__text--h5">News</div>
+          <div class="section-4__text--img">
+            <img src="./images/home/spoon.svg" alt="No img?" />
+          </div>
+          <div class="section-4__text--h1">Gericht Updates</div>
+        </div>
+        <div class="section-4__cards" data-aos="zoom-in">
+          <div class="row gy-3">
+            <div class="col-lg-6 col-sm-12 col-xl-6 col-xxl-4">
+              <div class="section-4__card">
+                <img class="s-4__img" src="./images/home/fire.svg" alt="No img?" />
+                <div class="section-4__card--h1">
+                  Tips For Prepping And Caring For Your Grill
+                </div>
+                <div class="section-4__card--p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                  mattis ipsum turpis elit elit scelerisque egestas mus in.
+                </div>
+                <div class="section-4__card--other">
+                  <div class="section-4__card--btn">Read More</div>
+                  <div class="section-4__card--date">16 Apr 2021</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xl-6 col-xxl-4">
+              <div class="section-4__card">
+                <img class="s-4__img" src="./images/home/fire.svg" alt="No img?" />
+                <div class="section-4__card--h1">
+                  Tips For Prepping And Caring For Your Grill
+                </div>
+                <div class="section-4__card--p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                  mattis ipsum turpis elit elit scelerisque egestas mus in.
+                </div>
+                <div class="section-4__card--other">
+                  <div class="section-4__card--btn">Read More</div>
+                  <div class="section-4__card--date">16 Apr 2021</div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 col-xl-6 col-xxl-4">
+              <div class="section-4__card">
+                <img class="s-4__img" src="./images/home/fire.svg" alt="No img?" />
+                <div class="section-4__card--h1">
+                  Tips For Prepping And Caring For Your Grill
+                </div>
+                <div class="section-4__card--p">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+                  mattis ipsum turpis elit elit scelerisque egestas mus in.
+                </div>
+                <div class="section-4__card--other">
+                  <div class="section-4__card--btn">Read More</div>
+                  <div class="section-4__card--date">16 Apr 2021</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section-4__btn hoverme1">View More</div>
+      </div>
+    </div>
+    <div class="section-5">
+      <div class="video__bg">
+        <img class="video__bg" src="./images/home/s-5_video.svg" alt="No img?" />
+      </div>
+      <div class="container">
+        <div class="video__btn">
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">
+            <img src="./images/home/s-5_player.svg" alt="No img?" />
+          </button>
+
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                    Pardayev Umidjon
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <iframe
+                    width="465"
+                    height="315"
+                    src="https://www.youtube.com/embed/RzVvThhjAKw?si=yTJ8LMmu1PQLQPZY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen></iframe>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-6">
+      <div class="container">
+        <div class="section-6__flex">
+          <div class="section-6__text">
+            <div class="s-6__text--h5">Instagram</div>
+            <div class="s-6__text--img">
+              <img src="./images/home/spoon.svg" alt="No img?" />
+            </div>
+            <div class="s-6__text--h1">Photo Gallery</div>
+            <div class="s-6__text--p">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
+              mattis ipsum turpis elit elit scelerisque egestas mu.
+            </div>
+            <div class="s-6__text--btn hoverme1">View More</div>
+          </div>
+          <div class="section-6__img">
+            <div class="s-6__img--bg1">
+              <div class="s-6__img1">
+                <!-- <img src="./images/home/instagram.svg" alt="No img?"> -->
+              </div>
+            </div>
+            <div class="s-6__img--bg2">
+              <div class="s-6__img1">
+                
+              </div>
+            </div>
+            <!-- <div class="s-6__img--bg3">
+              <div class="s-6__img1">
+                <img src="./images/home/instagram.svg" alt="No img?" />
+              </div>
+            </div>
+            <div class="s-6__img--bg4">
+              <div class="s-6__img1">
+                <img src="./images/home/instagram.svg" alt="No img?" />
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="footer__flex">
+          <div class="footer__contact_us">
+            <div class="footer__contact_us--h1">Contact Us</div>
+            <div class="footer__contact_us--p">
+              9 W 53rd St, London, NY 10019, UK
+            </div>
+            <div class="footer__contact_us--p2">+1 212-344-1230</div>
+            <div class="footer__contact_us--p2">+1 212-344-1230</div>
+          </div>
+          <div class="footer__brand">
+            <div class="footer__brand--img">
+              <img src="./images/nav/brand.svg" alt="No img?" />
+            </div>
+            <div class="footer__brand--p1">
+              "The best way to find yourself is to lose yourself in the service
+              of others.”
+            </div>
+            <div class="footer__brand--social">
+              <img src="./images/home/social.svg" alt="No img?" />
+            </div>
+            <div class="footer__brand--p2">
+              2022 Pop online. All Rights reserved.
+            </div>
+          </div>
+          <div class="footer__working_hours">
+            <div class="footer__working_hours--h1">Working Hours</div>
+            <div class="footer__working_hours--p">
+              Monday-Friday: 08:00 am -12:00 am
+            </div>
+            <div class="footer__working_hours--p2">
+              Saturday-Sunday: 07:00am -11:00 pm
+            </div>
+          </div>
+        </div>
+        <div class="footer__position">
+          <div class="footer__position--h6">Newsletter</div>
+          <div class="footer__position--h1">Subscribe to Our Newsletter</div>
+          <div class="footer__position--p">And never miss latest Updates!</div>
+          <div class="footer__position--btn">
+            <div class="footer__position--email">Email Address</div>
+            <div class="footer__position--sub">Subscribe</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="icons">
+      <div class="all__icons">
+        <div class="all__icon-1">
+          <img src="./images/home/all_icon.svg" alt="No img?" />
+        </div>
+        <div class="all__icon-2">
+          <img src="./images/home/all_icon.svg" alt="No img?" />
+        </div>
+        <div class="all__icon-3">
+          <img src="./images/home/all_icon.svg" alt="No img?" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

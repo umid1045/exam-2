@@ -1,0 +1,57 @@
+.ul_width {
+  width: 2828px;
+  height: 844px;
+  background-color: var(--color-red);
+  border-radius: 20px;
+}
+.section-2__flex {
+  margin: 160px 0 294px;
+}
+.section-2__h11 {
+  padding: 50px 40px 40px 40px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: white;
+}
+.nav-item1 {
+  margin: 0 0 20px 40px;
+  background-color: var(--color-red);
+}
+.nav-link11 {
+  padding: 10px 30px;
+  margin-right: 10px;
+  border-radius: 100px;
+  border: 1px solid white;
+  color: white;
+  background-color: var(--color-red);
+  transition: 0.5s;
+}
+.nav-link11:focus {
+  color: black;
+  background-color: white;
+}
+.nav-link11:hover {
+  color: black;
+  background-color: white;
+}
+.footer__flex1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 370px;
+}
+.footer__position1 {
+  width: 1040px;
+  height: 380px;
+  top: 3910px;
+  left: 230px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  position: absolute;
+}

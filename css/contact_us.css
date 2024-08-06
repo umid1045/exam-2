@@ -1,0 +1,148 @@
+.section-1 {
+  background-color: #f8f8f8;
+}
+.header__h1 {
+  padding: 170px 0 8px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 83.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #242424;
+}
+.header__icon {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.adres-1 {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.adres-1__img {
+  margin-left: 20px;
+  padding: 18px;
+  background-color: #2424240d;
+  border-radius: 100px;
+}
+.adres-1__text-h1 {
+  font-family: Open Sans;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: left;
+  color: #242424;
+}
+.adres-1__text-number {
+  padding-top: 3px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  text-align: left;
+  opacity: 0.7;
+  color: #242424;
+}
+.adres-1 {
+  margin-bottom: 15px;
+  width: 420px;
+  height: 110px;
+  border-radius: 14px;
+  border: 1px solid #2424241a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.adres-1:hover {
+  background-color: var(--color-red);
+  scale: 1.1;
+}
+.section-2__flex {
+  display: flex;
+  gap: 50px;
+}
+.s-2__send {
+  width: 790px;
+  height: 610px;
+  border: 1px solid #2424241a;
+  border-radius: 14px;
+}
+.send-h1 {
+  padding: 40px 0 16px 40px;
+  font-family: Open Sans;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: left;
+  color: #242424;
+}
+.send-p {
+  width: 605px;
+  padding: 0 0 40px 40px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  opacity: 0.7;
+  color: #242424;
+}
+#fname {
+  margin: 0 0 15px 40px;
+  padding: 20px 158px 20px 20px;
+  border-radius: 12px;
+  border: 1px solid #3322441a;
+  transition: 0.5s;
+}
+#fnamee {
+  margin: 0 0 15px 40px;
+  padding: 20px 544px 111px 20px;
+  border-radius: 12px;
+  border: 1px solid #3322441a;
+  transition: 0.5s;
+}
+.s-2__btn {
+  width: 216px;
+  margin: 10px 0 0 40px;
+  padding: 18px 45px;
+  border-radius: 40px;
+  background-color: var(--color-red);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.51px;
+  text-align: left;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.s-2__btn:hover {
+  scale: 1.1;
+}
+.section-2__card {
+  padding: 110px 0 130px 0;
+}
+.s-2__card-h1 {
+  padding-bottom: 40px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 49.4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: black;
+}
+.s-2__card-map {
+  text-align: center;
+  margin-bottom: 110px;
+}
+.footer__position4 {
+  width: 1040px;
+  height: 380px;
+  top: 2820px;
+  left: 230px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  position: absolute;
+}

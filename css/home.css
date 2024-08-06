@@ -1,0 +1,1058 @@
+.back__top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.back__top--i {
+  color: white;
+  font-size: 25px;
+}
+
+/* loading */
+
+#loading {
+  position: fixed;
+  /* background-color: white; */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#loading.loading-none {
+  opacity: 0;
+  z-index: -1000;
+}
+
+.loading {
+  z-index: 1000;
+  /* position: relative; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #001400;
+  animation: changeColor 5s linear infinite;
+}
+@keyframes changeColor {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+.loading .loading__h2 {
+  color: #00ff0a;
+  font-family: consolas;
+  font-weight: 300;
+  letter-spacing: 10px;
+}
+.loading .loader {
+  position: relative;
+  display: flex;
+}
+.loading .loader .dot {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: #00ff0a;
+  box-shadow: 0 0 10px #00ff0a, 0 0 20px #00ff0a, 0 0 40px #00ff0a,
+    0 0 60px #00ff0a, 0 0 80px #00ff0a, 0 0 100px #00ff0a;
+  margin: 20px 10px;
+  transform: scale(0.1);
+  border-radius: 50%;
+  animation: animateDot 2s linear infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+.loading .loader:last-child .dot {
+  animation-delay: calc(-0.1s * var(--i));
+}
+@keyframes animateDot {
+  0% {
+    transform: scale(0.1);
+  }
+  10% {
+    transform: scale(1);
+  }
+  50%,
+  100% {
+    transform: scale(0.1);
+  }
+}
+
+/* header */
+
+header {
+  background-color: var(--color-red);
+}
+.header__flex {
+  display: flex;
+  align-items: center;
+  gap: 98px;
+  padding: 80px 0 70px;
+}
+.header__text--h4 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: white;
+}
+.header__text--h1 {
+  padding: 8px 0 20px;
+  width: 555px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 117px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: white;
+}
+.header__text--p {
+  padding-bottom: 40px;
+  width: 452px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  opacity: 0.6;
+  color: white;
+}
+.header__text--btn {
+  padding: 8px 32px;
+  width: 180px;
+  border: 1px solid white;
+  border-radius: 100px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.header__text--btn:hover {
+  scale: 1.1;
+}
+.hoverme_bg {
+  padding: 40px 40px;
+  display: inline-block;
+  border-radius: 15px;
+  background-color: black;
+}
+.hoverme {
+  transform: scale(1.2);
+  padding: 5px 34px;
+  border: white;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  background-color: #333;
+  position: relative;
+  z-index: 0;
+  border: 1px solid white;
+}
+.hoverme::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-red);
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+.hoverme::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.hoverme:hover::before {
+  opacity: 1;
+}
+.hoverme:active::after {
+  background: transparent;
+}
+.hoverme:active {
+  color: #000;
+}
+.hoverme1 {
+  transform: scale(1.2);
+  padding: 5px 34px;
+  border: white;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  background-color: #333;
+  position: relative;
+  z-index: 0;
+  border: 1px solid white;
+}
+.hoverme1::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  left: 0;
+  top: 0;
+  border-radius: 100px;
+}
+.hoverme1::before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  animation: glowing 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+  opacity: 0;
+}
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+.hoverme1:hover::before {
+  opacity: 1;
+}
+.hoverme1:active::after {
+  background: transparent;
+}
+.hoverme1:active {
+  color: #000;
+}
+
+.header__scroll {
+  padding-bottom: 54px;
+}
+.header__scroll--line {
+  text-align: end;
+  position: relative;
+  right: 25px;
+}
+.header__scroll--text {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: end;
+  color: white;
+}
+
+@media (max-width: 1478px) {
+  .header__flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 730px) {
+  .header__img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 568px) {
+  .header__text--h4,
+  .header__text--h1,
+  .header__text--p {
+    width: 100%;
+  }
+}
+
+/* section-1 */
+
+.section-1 {
+  background-color: #f8f8f8;
+}
+.section-1__text {
+  padding: 120px 0 30px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--color-red);
+}
+.section-1__card {
+  padding-bottom: 120px;
+  display: flex;
+  gap: 20px;
+}
+.section-1__card-1,
+.section-1__card-2,
+.section-1__card-3,
+.section-1__card-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 310px;
+  height: 396px;
+  border-radius: 14px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.section-1__card-1:hover,
+.section-1__card-2:hover,
+.section-1__card-3:hover,
+.section-1__card-4:hover {
+  scale: 1.1;
+  background-color: var(--color-red);
+  .section-1__card-p {
+    color: #242424;
+  }
+}
+.section-1__card-img {
+  padding: 20px 20px 10px 20px;
+}
+.section-1__card-h1 {
+  padding: 0 20px 20px 20px;
+  width: 270px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.51px;
+  text-align: center;
+  color: #242424;
+}
+.section-1__card-img2 {
+  padding: 0 110px 20px 110px;
+}
+.section-1__card-p {
+  padding-bottom: 40px;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  text-align: center;
+  color: var(--color-red);
+  transition: 0.5s;
+}
+@media (max-width: 1404px) {
+  .section-1__card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-1__text {
+    text-align: center;
+  }
+}
+@media (max-width: 295px) {
+  .section-1__card,
+  .section-1__card-1,
+  .section-1__card-2,
+  .section-1__card-3,
+  .section-1__card-4 {
+    width: 100%;
+  }
+  .section-1__text {
+    width: 100%;
+  }
+}
+
+/* section-2 */
+
+.section-2__h1 {
+  padding: 120px 0 60px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--color-red);
+}
+.nav-link1 {
+  padding: 10px 30px;
+  margin-right: 10px;
+  border-radius: 100px;
+  border: 1px solid var(--color-red);
+  color: black;
+  background-color: white;
+  transition: 0.5s;
+}
+.nav-link1:focus {
+  color: white;
+  background-color: var(--color-red);
+}
+.nav-link1:hover {
+  color: white;
+  background-color: var(--color-red);
+}
+.nav-link1:active {
+  background-color: var(--color-red);
+}
+.s-2__card {
+  border-radius: 14px;
+  border: 1px solid #2424241a;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.s-2__card:hover {
+  background-color: var(--color-red);
+  scale: 1.05;
+  .s-2__card-text {
+    color: black;
+  }
+}
+.card-title {
+  padding: 10px 0 30px;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24.51px;
+  text-align: center;
+  color: #242424;
+}
+.s-2__card-text {
+  padding: 0 0 40px 0;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.68px;
+  text-align: center;
+  color: var(--color-red);
+  transition: 0.5s;
+}
+
+/* section-3 */
+
+.section-3 {
+  height: 645px;
+  background-color: #f4f4f4;
+  margin-top: 120px;
+}
+.section-3__text {
+  padding: 100px 0 60px;
+}
+.section-3__text--h5 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #242424;
+}
+.section-3__text--h1 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 62.4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #242424;
+}
+.section-3__text--img {
+  padding: 8px 0;
+  text-align: center;
+}
+.section-3__cards {
+  display: flex;
+  gap: 35px;
+}
+.section-3__card {
+  padding-bottom: 40px;
+  width: 410px;
+  height: 198px;
+  border: 1px solid #3333331a;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.section-3__card:hover {
+  background-color: var(--color-red);
+  scale: 1.1;
+}
+.section-3__card--h1 {
+  padding: 30px 0 10px 20px;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26px;
+  text-align: left;
+  color: #333333;
+}
+.section-3__card--p {
+  padding: 0 40px 20px 20px;
+  opacity: 0.6;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #333333;
+}
+.section-3__card--other {
+  padding: 0 175px 30px 20px;
+}
+@media (max-width: 1406px) {
+  .section-3__cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 420px) {
+  .section-3__card,
+  .s-2__card {
+    max-width: 100%;
+  }
+}
+
+/* section-4 */
+
+.section-4 {
+  padding-top: 120px;
+}
+.section-4__text {
+  padding: 100px 0 60px;
+}
+.section-4__text--h5 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #242424;
+}
+.section-4__text--img {
+  padding: 8px 0;
+  text-align: center;
+}
+.section-4__text--h1 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--color-red);
+}
+.section-4__cards {
+  padding-bottom: 50px;
+  display: flex;
+  gap: 35px;
+  cursor: pointer;
+}
+.section-4__card {
+  width: 410px;
+  height: 584px;
+  border: 1px solid #2424241a;
+  border-radius: 14px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.section-4__card:hover {
+  background-color: var(--color-red);
+  scale: 1.1;
+  .section-4__card--btn {
+    color: #aaaaaa;
+  }
+  .section-4__card--date {
+    color: #aaaaaa;
+    font-weight: 700;
+    opacity: 1;
+  }
+}
+.section-4__card--h1 {
+  padding: 20px 48px 10px 20px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  text-align: left;
+  color: #242424;
+}
+.section-4__card--p {
+  padding: 0 30px 20px 20px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #aaaaaa;
+}
+.section-4__card--other {
+  padding: 0 20px 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.section-4__card--btn {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: var(--color-red);
+}
+.section-4__card--date {
+  opacity: 0.5;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  text-align: left;
+  color: #242424;
+}
+.section-4__btn {
+  width: 151px;
+  padding: 8px 32px;
+  margin: 0 564px 0 580px;
+  margin: 0 auto;
+  border: 1px solid var(--color-red);
+  border-radius: 100px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  color: black;
+}
+.section-4__btn:hover {
+  background-color: var(--color-red);
+  scale: 1.1;
+}
+@media (max-width: 438px) {
+  .section-4__card,
+  .s-4__img,
+  .section-3__text--h1 {
+    width: 100%;
+  }
+  .section-4__text {
+    margin-top: 300px;
+  }
+}
+
+/* section-5 */
+
+.video__bg {
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+.video__btn {
+  padding: 36px 31px 30px 40px;
+  border-radius: 100%;
+  cursor: pointer;
+  position: absolute;
+  top: 5368px;
+  left: 711px;
+  /* margin: 0 auto; */
+  transition: 0.5s;
+}
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 29px;
+  left: 27px;
+  padding: 80px;
+  background-color: var(--color-red);
+}
+@media (max-width: 1499px) {
+  .video__bg {
+    width: 100%;
+  }
+}
+
+/* section-6 */
+
+.section-6 {
+  background-color: #f4f4f4;
+}
+.section-6__flex {
+  display: flex;
+  align-items: center;
+  padding: 128px 0 130px;
+  gap: 64px;
+}
+.s-6__text--h5 {
+  padding: 91px 0 8px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #242424;
+}
+.s-6__text--h1 {
+  padding-bottom: 24px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #242424;
+}
+.s-6__text--p {
+  width: 491px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #aaaaaa;
+}
+.s-6__text--btn {
+  width: 151px;
+  padding: 8px 32px;
+  margin: 24px 0 91px;
+  border: 1px solid var(--color-red);
+  border-radius: 100px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #242424;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.s-6__text--btn:hover {
+  scale: 1.1;
+  background-color: var(--color-red);
+}
+.section-6__img {
+  display: flex;
+  gap: 32px;
+}
+.s-6__img--bg1 {
+  width: 301px;
+  height: 446px;
+  background-image: url(../images/home/s-6_bg-1.svg);
+  border-radius: 14px;
+  cursor: pointer;
+}
+.s-6__img--bg1:hover,
+.s-6__img--bg2:hover,
+.s-6__img--bg3:hover,
+.s-6__img--bg4:hover {
+  filter: blur(5px);
+}
+.s-6__img--bg2 {
+  width: 301px;
+  height: 446px;
+  background-image: url(../images/home/s-6_bg-2.svg);
+  border-radius: 14px;
+}
+.s-6__img--bg3 {
+  width: 301px;
+  height: 446px;
+  background-image: url(../images/home/s-6_bg-3.svg);
+  border-radius: 14px;
+}
+.s-6__img--bg4 {
+  width: 301px;
+  height: 446px;
+  background-image: url(../images/home/s-6_bg-4.svg);
+  border-radius: 14px;
+  z-index: -1;
+  filter: blur(5px);
+}
+.s-6__img1 {
+  width: 301px;
+  height: 446px;
+  padding: 223px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+@media (max-width: 1265px) {
+  .section-6__flex {
+    flex-direction: column;
+  }
+}
+@media (max-width: 633px) {
+  .section-6__img {
+    flex-direction: column;
+  }
+  .section-6__text--p {
+    width: 0;
+  }
+}
+
+/* footer */
+
+footer {
+  background-color: var(--color-red);
+}
+.footer__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 370px;
+}
+.footer__position {
+  width: 1040px;
+  height: 380px;
+  top: 6850px;
+  left: 230px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  position: absolute;
+}
+.footer__position--h6 {
+  padding: 64px 0 25px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 29.9px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__position--h1 {
+  padding-bottom: 24px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 62.4px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: white;
+}
+.footer__position--p {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__position--btn {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 60px;
+}
+.footer__position--email {
+  padding: 12px 18px;
+  width: 700px;
+  border: 1px solid #aaaaaa;
+  border-radius: 100px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #aaaaaa;
+}
+.footer__position--sub {
+  padding: 12px 32px;
+  border: 1px solid white;
+  border-radius: 100px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: white;
+  cursor: pointer;
+}
+.footer__contact_us {
+  padding: 318px 0 50px;
+}
+.footer__contact_us--h1 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__contact_us--p {
+  padding: 24px 0 10px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__contact_us--p2 {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__brand {
+  padding: 292px 0 40px;
+}
+.footer__brand--img {
+  text-align: center;
+}
+.footer__brand--p1 {
+  width: 438px;
+  padding: 32px 0 45px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__brand--social {
+  text-align: center;
+}
+.footer__brand--p2 {
+  padding-top: 80px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__working_hours {
+  padding: 450px 0 150px;
+}
+.footer__working_hours--h1 {
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 41.6px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__working_hours--p {
+  width: 190px;
+  padding: 24px 0 12px 22.5px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+.footer__working_hours--p2 {
+  width: 190px;
+  padding-left: 22.5px;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: white;
+}
+
+/* all icons */
+
+.all__icon-1 {
+  position: absolute;
+  top: 1680px;
+  left: 1310px;
+}
+.all__icon-2 {
+  position: absolute;
+  top: 3950px;
+  left: 1310px;
+}
+.all__icon-3 {
+  position: absolute;
+  top: 5180px;
+  left: 250px;
+}

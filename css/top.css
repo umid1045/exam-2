@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1278px;
+  margin: 0 auto;
+}
+
+:root {
+  --color-red: #bb2338;
+}

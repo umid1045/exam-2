@@ -1,0 +1,52 @@
+.s-1__h1 {
+  padding: 70px 0 8px;
+  font-family: "Cera Round Pro DEMO", sans-serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 83.2px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #242424;
+}
+.s-1__icon {
+  text-align: center;
+}
+.s-1__p1 {
+  width: 720px;
+  margin: 0 auto;
+  padding: 40px 0 30px;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  opacity: 0.8;
+  color: #242424;
+}
+.s-1__img {
+  text-align: center;
+}
+.s-1__p2 {
+  width: 720px;
+  padding: 30px 0 180px;
+  margin: 0 auto;
+  opacity: 0.8;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: #242424;
+}
+.footer__position3 {
+  width: 1040px;
+  height: 380px;
+  top: 1840px;
+  left: 230px;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: var(--color-red);
+  position: absolute;
+}
